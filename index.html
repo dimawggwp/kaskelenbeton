@@ -332,6 +332,138 @@ footer .brand img{width:38px;height:38px}
   .col span{font-size:10px;writing-mode:vertical-rl;transform:rotate(180deg)}
   .hero .ctas .btn{flex:1;justify-content:center}
 }
+
+/* ===== MOBILE (only ≤700px, desktop untouched) ===== */
+.mbar{display:none}
+@media (max-width:700px){
+  body{padding-bottom:76px}
+  .sec{padding:56px 0}
+  h2{font-size:30px}
+  .sec-head{margin-bottom:22px;gap:12px}
+  .sec-head p{font-size:15px}
+  .eyebrow{font-size:12px}
+  .nav{padding:10px 0}
+  .brand img{width:42px;height:42px}
+  /* hero shorter */
+  .hero{min-height:auto}
+  .hero-in{padding-top:92px;padding-bottom:150px;gap:10px}
+  .badge-wrap{display:none}
+  .hero h1{font-size:44px}
+  .hero p.lead{font-size:16px;margin:16px 0 22px}
+  .hero .ctas{flex-direction:column}
+  .hero .ctas .btn{padding:15px 20px}
+  .road{height:76px}.road::before{top:36px}
+  .truck{width:230px;bottom:40px}
+  .mtn{bottom:70px!important}
+  /* stats compact */
+  .stat{padding:16px 14px}
+  .stat b{font-size:20px}.stat span{font-size:13px}
+  .marq{padding:12px 0}.marq span{font-size:16px;gap:28px}.marq-track{gap:28px}
+  /* horizontal scrollers */
+  .hs{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-20px;padding:4px 20px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .hs::-webkit-scrollbar{display:none}
+  .hs>*{scroll-snap-align:start;flex:none}
+  .tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%;border-radius:16px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none;padding:10px 14px;font-size:14px}
+  /* prices: compact rows */
+  .price-grid{grid-template-columns:1fr;gap:8px;margin-top:16px}
+  .pcard{display:flex;align-items:center;gap:12px;padding:12px 12px 12px 16px;border-radius:16px}
+  .pcard>div:nth-child(2){flex:none;width:96px}
+  .pcard .g{font-size:24px;display:block}
+  .pcard .cls{margin:4px 0 0;font-size:12px;padding:2px 8px}
+  .pcard p{display:none}
+  .pcard .pr{flex:1}
+  .pcard .pr b{font-size:17px}.pcard .pr small{font-size:12px}
+  .pcard .order{width:42px;height:42px}
+  .pcard:hover{transform:none}
+  .note{font-size:13px;margin-top:14px}
+  /* calculator */
+  .calc-box{gap:12px}
+  .panel{padding:16px;border-radius:20px}
+  .shapes{grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px}
+  .shape{padding:10px 4px 8px;font-size:12px;border-radius:12px}
+  .shape svg{width:32px;height:24px;margin-bottom:4px}
+  .fields{grid-template-columns:1fr 1fr;gap:10px}
+  .fields .field:first-child:nth-last-child(3){grid-column:span 2}
+  .row2{grid-template-columns:1fr;gap:10px;margin-top:10px}
+  .field label{font-size:13px;margin-bottom:4px}
+  .field input,.field select{font-size:16px;padding:11px 12px}
+  .chk{font-size:13px;margin-top:12px}
+  .drum-vis{height:96px;margin:0 0 4px}
+  .result{display:grid;grid-template-columns:1fr;}
+  .vol{font-size:44px}
+  .trucks{margin:2px 0 12px;font-size:14px}
+  .lines{font-size:13px;gap:6px;padding-top:10px}
+  .total{margin:12px 0 14px;padding-top:10px}
+  .total b{font-size:24px}
+  .tiny{font-size:12px}
+  /* grades */
+  .purpose{flex-wrap:nowrap;margin-bottom:34px}
+  .chip{padding:10px 14px;font-size:14px}
+  .scale{height:130px;gap:4px;margin-bottom:14px}
+  .col{padding-top:6px;border-radius:8px 8px 4px 4px}
+  .col.rec::after{content:"✓";top:-22px;font-size:14px}
+  .gdetail{padding:18px;border-radius:20px;gap:10px;grid-template-columns:auto 1fr}
+  .gdetail .big{font-size:44px}
+  .gdetail h3{font-size:17px;margin-bottom:4px}
+  .gdetail p{font-size:14px}
+  .gdetail .meta{gap:16px;font-size:13px}.gdetail .meta b{font-size:15px}
+  .gdetail .btn{grid-column:span 2;justify-content:center}
+  .extra{margin-top:12px}
+  .extra.hs>*{width:82%}
+  .xcard{padding:18px}.xcard h3{font-size:16px}.xcard p{font-size:14px}
+  /* fleet: swipe gallery */
+  .mosaic.hs>.ph{width:82%;height:250px;grid-column:auto!important;grid-row:auto!important}
+  .ph figcaption{font-size:13px;padding:10px 12px}.ph figcaption b{font-size:14px}
+  /* steps: swipe */
+  .steps.hs>.step{width:70%;padding:20px}
+  .step::before{font-size:40px;margin-bottom:8px}
+  .step h3{font-size:17px}.step p{font-size:14px}
+  /* delivery */
+  .del-grid{gap:12px}
+  .zones{padding:20px;border-radius:20px}
+  .zone{padding:12px 0}
+  .zone h3{font-size:15px}.zone small{font-size:12px}.zone b{font-size:15px}
+  .zones .btn{width:100%;justify-content:center;margin-top:12px!important}
+  .rules.hs>.rule{width:78%}
+  .rule{padding:14px}
+  .rule b{font-size:15px}.rule span{font-size:13px}
+  .delivery .sec-head[style]{margin:44px 0 16px!important}
+  .mats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .mat{padding:12px 10px;border-radius:14px}
+  .mat .sw{width:34px;height:34px;border-radius:10px;margin-bottom:8px}
+  .mat b{font-size:14px}.mat span{font-size:12px;line-height:1.3;display:block}
+  /* faq */
+  .q button{font-size:16px;padding:16px 0}
+  .q button i{width:30px;height:30px}
+  .q .a p{font-size:15px;padding-bottom:16px}
+  /* cta */
+  .cta h2{font-size:34px}
+  .cta p{margin:12px 0 18px;font-size:15px}
+  .phone-big{font-size:26px;margin-bottom:16px}
+  .cta-card{padding:16px;border-radius:20px}
+  .cta-card .map{height:180px}
+  .cta-card div{font-size:13px}
+  footer{padding:20px 0 24px;font-size:13px}
+  footer .wrap{flex-direction:column;align-items:flex-start;gap:10px}
+  .calc-box>*,.fields>*,.row2>*,.del-grid>*,.cta-in>*,.field .inp{min-width:0}
+  .field select{width:100%;text-overflow:ellipsis}
+  h2{font-size:26px;overflow-wrap:break-word}
+  .cta h2{font-size:32px}
+  .gdetail{grid-template-columns:1fr!important}
+  .gdetail .big{font-size:40px}
+  .gdetail .btn{grid-column:auto}
+  section[id]{scroll-margin-top:64px}
+  /* sticky action bar replaces floating button */
+  .fab{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:70;padding:8px;border-radius:20px;background:rgba(10,23,48,.92);backdrop-filter:blur(14px);box-shadow:0 14px 40px -12px rgba(0,0,0,.6);transform:translateY(130%);transition:transform .45s var(--ease)}
+  .mbar.show{transform:none}
+  .mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:8px 4px;border-radius:14px;color:#fff;font-weight:800;font-size:12px}
+  .mbar a svg{width:20px;height:20px}
+  .mbar .w{background:var(--wa);flex-direction:row;gap:8px;font-size:15px}
+  .mbar .c{background:rgba(255,255,255,.08)}
+}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -633,6 +765,11 @@ footer .brand img{width:38px;height:38px}
   </div>
 </footer>
 
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a class="c" href="tel:+77750010555"><svg><use href="#ph"/></svg>Звонок</a>
+  <a class="w" data-wa="Здравствуйте! Хочу заказать бетон." href="#"><svg><use href="#wa"/></svg>WhatsApp</a>
+  <a class="c" href="#calc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg>Расчёт</a>
+</nav>
 <a class="fab" data-wa="Здравствуйте! Хочу заказать бетон." href="#" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
 
 <script>
@@ -782,6 +919,13 @@ const burger=document.getElementById('burger'),links=document.getElementById('li
 burger.addEventListener('click',()=>links.classList.toggle('open'));
 links.addEventListener('click',e=>{if(e.target.tagName==='A')links.classList.remove('open')});
 
+
+/* mobile: swipe rows + sticky bar */
+const mq700=matchMedia('(max-width:700px)');
+function mob(){const on=mq700.matches;['.mosaic','.steps','.rules','.extra','#purpose'].forEach(s=>{const el=document.querySelector(s);if(el)el.classList.toggle('hs',on)})}
+mq700.addEventListener('change',mob);mob();
+const mbar=document.getElementById('mbar');
+addEventListener('scroll',()=>mbar.classList.toggle('show',scrollY>innerHeight*.5),{passive:true});
 /* image fallback */
 document.querySelectorAll('.ph img').forEach(img=>img.addEventListener('error',()=>{img.style.display='none'}));
 </script>
